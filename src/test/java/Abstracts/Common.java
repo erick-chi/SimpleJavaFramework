@@ -1,6 +1,7 @@
 package Abstracts;
 
 import Base.BaseTest;
+import PageObjects.LandPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,13 +29,16 @@ public class Common extends BaseTest {
         return waitForElement(locator, timeoutSeconds, driver);
     }
 
-
     public static void Sleep(int seconds) {
         try {
             Thread.sleep(seconds * 1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public LandPage landPage(){
+      return new LandPage(driver);
     }
 
 }
