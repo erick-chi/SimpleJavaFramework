@@ -1,7 +1,6 @@
 package Tests;
 
 import Abstracts.Common;
-import PageObjects.LandPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

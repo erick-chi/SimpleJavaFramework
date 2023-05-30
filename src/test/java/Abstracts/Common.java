@@ -31,7 +31,7 @@ public class Common extends BaseTest {
 
     public static void Sleep(int seconds) {
         try {
-            Thread.sleep(seconds * 1000);
+            Thread.sleep(seconds * 1000L);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
