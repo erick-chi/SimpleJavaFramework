@@ -1,6 +1,6 @@
-package Tests;
+package Framework.Tests;
 
-import Abstracts.Common;
+import Framework.Abstracts.Common;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

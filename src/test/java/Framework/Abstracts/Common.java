@@ -1,7 +1,7 @@
-package Abstracts;
+package Framework.Abstracts;
 
-import Base.BaseTest;
-import PageObjects.LandPage;
+import Framework.Base.BaseTest;
+import Framework.PageObjects.LandPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

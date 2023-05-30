@@ -1,4 +1,4 @@
-package PageLocators;
+package Framework.PageLocators;
 
 public class Locators {
     public class Home{

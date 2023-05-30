@@ -1,7 +1,7 @@
-package PageObjects;
+package Framework.PageObjects;
 
-import Abstracts.Common;
-import PageLocators.Locators;
+import Framework.Abstracts.Common;
+import Framework.PageLocators.Locators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
