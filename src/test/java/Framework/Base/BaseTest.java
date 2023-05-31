@@ -48,6 +48,7 @@ public class BaseTest {
     public void tearDown(){
         driver.quit();
     }
+    public void QuitDriver(){driver.quit();}
 
 
 }
