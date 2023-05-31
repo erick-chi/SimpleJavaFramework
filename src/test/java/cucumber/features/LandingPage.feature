@@ -8,3 +8,7 @@ Feature: Land Page
     Given A user selects direct flights option
     And User Clicks On One Way Button
     Then Return Field Disappears From Users View
+
+  Scenario: Expected Passengers Dropdown Options}
+    Given user goes to airline page
+    Then validate dropdown for expected passengers holds 9 options

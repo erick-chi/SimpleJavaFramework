@@ -6,6 +6,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LandingPageDeff extends Common {
     @Given("user goes to airline page")
     public void Landing() {
@@ -23,9 +26,14 @@ public class LandingPageDeff extends Common {
     public void ClickOneWayButton() {
         landPage().clickOneWayBtn();
     }
-
     @Then("Return Field Disappears From Users View")
     public void ReturnFieldDisplay() {
         Assert.assertFalse(landPage().IsReturnFieldDisplayed(), "Return Field Is Being Displayed After Selecting One Way Trip");
+    }
+    @Then("validate dropdown for expected passengers holds 9 options")
+    public void PassengerDropdownOptions() {
+        List<String> dropdownItems = new ArrayList<>();
+        landPage().GetPassengersddOptions().forEach(element -> dropdownItems.add(element.getText()));
+        Assert.assertEquals(dropdownItems.toArray(), landPage().GetExpectedPassengersddItems().toArray(), "The expected elements within the passengers dropdown are not displayed correctly");
     }
 }
